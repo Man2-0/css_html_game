@@ -234,20 +234,30 @@ i.fa-star {
     background-image: url(../img/taldarim_bg.jpg);
     background-position: 40% 0;
 }
-.app.results[data-race="zerg"] {
-    background-image: url(../img/zerg_bg.jpg);
-}
-.results__quote {
-}
-.results__author {
-}
-.app__btn {
-}
-.btn__back {
+.app.results[data-race="hybrid"] {
+    background-image: url(../img/hybrid_bg.jpg);
+    background-position: 45% 0;
 }
 .btn__zerg {
+    background-color: #762877;
 }
-.fa {
+.btn__primal {
+    background-color: #56a725;
 }
-.fa-reply {
+.btn__protoss {
+    background-color: #fce356;
+    color: #000
+}
+.btn__taldarim {
+    background-color: #9d0101;
+}
+.btn__terran {
+    background-color: #da8618;
+}
+.btn__infested {
+    background-color: #f5b673;
+    color: #000
+}
+.btn__hybrid {
+    background-color: #fc7654;
 }

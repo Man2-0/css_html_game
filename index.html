@@ -49,7 +49,7 @@
                     <div class="app__body-top">
                         <div class="app__card">
                             <div class="app__card-text">Счёт:</div>
-                            <div class="app__card-count">0</div>
+                            <div class="app__card-count">{{ totalScore }}</div>
                         </div>
                         <div class="app__card">
                             <div class="app__card-text">Открыто рас:</div>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="app__card">
                             <div class="app__card-text">Всего игр:</div>
-                            <div class="app__card-count">0</div>
+                            <div class="app__card-count">{{ totalGames }}</div>
                         </div>
                         <div class="app__card">
                             <div class="app__card-text">Любимая раса:</div>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="app__body-bottom">
-                        <button class="app__btn btn__back btn-achivment">
+                        <button class="app__btn btn__back btn-achivment" @click="goToMain">
                             <i class="fa fa-reply" area-hidden="true"></i>
                         </button>
                     </div>
@@ -296,6 +296,11 @@
                         this.totalGame.infested++
                     }
                     localStorage.setItem('sc2TotalGame', JSON.stringify(this.totalGame))
+                }
+            },
+            computed: {
+                totalScore() {
+                    let score=0
                 }
             }
         })

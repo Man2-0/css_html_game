@@ -12,17 +12,6 @@ i.fa {
     font-size: 30px;
     margin-right: 10px;
 }
-@keyframes slide {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 0%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
 .main {
     background-image: url(../img/background__main.jpg);
     background-repeat: repeat-x;
@@ -34,6 +23,17 @@ i.fa {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+}
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 .app__header{
     background-color: rgba(0,0,0,0.5);
